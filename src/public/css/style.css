@@ -1,0 +1,46 @@
+#todo{
+  background-color: rgb(192, 198, 223);
+}
+.grid-container {
+  display: grid;  
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera"
+    "cuerpo cuerpo cuerpo cuerpo";
+}
+
+.cabecera { grid-area: cabecera; 
+  color: aliceblue;
+  font-family: 'Nerko One', cursive;
+}
+
+.cuerpo {
+  display: grid;
+  grid-template-areas:
+    "texto texto imagen"
+    "columnas columnas columnas";
+  
+}
+#barraherramientas{
+  background-color: rgb(59, 59, 128);
+}
+
+.columnas { grid-area: columnas; }
+
+.texto { 
+  grid-area: texto; 
+  padding-top: 100px;
+  text-align: center;
+}
+#boton1{
+  margin-left: 170px;
+}
+
+.imagen { grid-area: imagen; }
+
+.pie { grid-area: pie;
+  height:  60px;
+  padding-top: 20px;
+  background-color: rgb(45, 39, 61);
+  text-align: center;
+  color: aliceblue;
+}
